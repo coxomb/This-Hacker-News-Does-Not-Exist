@@ -9,6 +9,7 @@ input[type=\"submit\"] { font-family:Verdana, Geneva, sans-serif; }
 textarea { font-family:monospace; font-size:10pt; resize:both; }
 
 a:link    { color:#000000; text-decoration:none; }
+a:visited    { color:#000000; }
 
 .default { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:#828282; }
 .admin   { font-family:Verdana, Geneva, sans-serif; font-size:8.5pt; color:#000000; }
