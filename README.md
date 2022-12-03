@@ -5,3 +5,5 @@ None of the headlines are real and are programatically generated and totally ran
 This project was inspired by [This Person Does Not Exist](https://thispersondoesnotexist.com/) and other [similar 'Does Not Exist' projects](https://thisxdoesnotexist.com/).
 
 (Thank you Github for allowing me to host my project here).
+
+Here's the demo: [https://coxomb.github.io/This-Hacker-News-Does-Not-Exist/](https://coxomb.github.io/This-Hacker-News-Does-Not-Exist/)
