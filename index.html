@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="robots" content="noindex" />
+      <title>Hacker News</title>
+      <script src="js/string.js" type="text/javascript"></script>
+      <script src="js/faker.js" type="text/javascript"></script>
+      <script src="js/jquery-1.4.2.js" type="text/javascript"></script>
+      <script src="js/jquery.tmpl.js" type="text/javascript"></script>
+      <script src="js/titleData.js" type="text/javascript"></script>
+      <script id="titleTemplate" type="text/html">
+         <tr class='athing'>
+            <td align="right" valign="top" class="title"><span class="rank">${itemNum}.</span></td>
+            <td valign="top" class="votelinks">
+               <center>
+                  <a href='#'>
+                     <div class='votearrow' title='upvote'></div>
+                  </a>
+               </center>
+            </td>
+            <td class="title"><span class="titleline"><a href="#">${title}</a><span class="sitebit comhead"> (<a href="#"><span class="sitestr">${domain}</span></a>)</span></span></td>
+         </tr>
+         <tr>
+            <td colspan="2"></td>
+            <td class="subtext"><span class="subline">
+               <span class="score" id="score_33828509">${upvotes} points</span> by <a href="user?id=${uname}" class="hnuser">${uname}</a> <span class="age" title="2022-12-02T09:33:37"><a href="#">${timescale} hours ago</a></span> | <a href="#">hide</a> | <a href="comments.html">${comments}&nbsp;comments</a>
+               </span>
+            </td>
+         </tr>
+      </script>
+   </head>
+   <body>
+      <style type="text/css">
+         #banner {
+         text-align: center;
+         padding: 10px;
+         margin-bottom: 30px;
+         border: 2px solid #222222;
+         background-color: #f4f4f4;
+         color: #000000;
+         font-size: 12px;
+         }
+         #banner a {
+         text-decoration: underline;
+         }
+         #banner button{
+         cursor:pointer;
+         }
+         #banner img{
+         width: 16px;
+         height: 16px;
+         }
+         .hnEntry{
+         display:block;
+         }
+      </style>
+      <div id="banner">
+         <p>
+         <h3>This Hacker News Does Not Exist</h3>
+         </p>
+         <noscript>
+            <p>
+               <strong>It seems you jave Javascript disabled</strong>. This webpage works best with Javascript enabled. Whilst I appreciate you may have Javascript disabled for privacy or accessibility reasons, the core functionality of the page will not work with it disabled. You may have to temporarily whitelist this page. There are no analytics scripts on this page.
+            </p>
+         </noscript>
+         <p>This page is intended to be a humorous parody of <a href="https://en.wikipedia.org/wiki/Hacker_News">Hacker News</a>. It is not in any way affiliated with Hacker News. The page's theme and layout are based on the original site. The usernames are intended to be fictitious, as are the headlines. This site was made with <a href="https://fakerjs.dev/">Faker.js</a> (The original version), <a href="https://github.com/jprichardson/string.js/">String.js</a>, and an old jQuery templating plugin written by John Resig in 2010.</p>
+         <p>None of the headlines are real and are programatically generated and totally random. The <a href="comments.html">comments page</a> is a shamless rip of a <a href="https://archive.ph/YkBtG">Hackernews Parody Page by Brad Conte</a>. I apologize if any (fictitious) headlines may have offended you. Sometimes it might be off color, but that's not me, it's the Faker.js script at its worst.</p>
+         <p>This project was inspired by <a href="https://thispersondoesnotexist.com/">This Person Does Not Exist</a> and <a href="https://thisxdoesnotexist.com/">other similar 'Does Not Exist' projects</a></p>
+         <p>
+            This project is <a href="https://github.com/username/project">hosted on Github</a> and the source code is readily viewable. (Thank you Github for allowing me to host my project there).
+         </p>
+         <p>
+            To get a new randomly generated set of headlines, either refresh the page, or click the button below:<br><br>
+            <button onclick="window.location.reload()"><img src=reload.png/> CLICK HERE TO GENERATE A NEW SET OF FAKE HEADLINES <img src=reload.png/></button>
+         </p>
+      </div>
+      <!-- HN HEADER START-->
+      <center>
+         <table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+            <tr>
+               <td bgcolor="#ff6600">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px">
+                     <tr>
+                        <td style="width:18px;padding-right:4px"><a href="#"><img src="y18.gif" width="18" height="18" style="border:1px white solid;"></a></td>
+                        <td style="line-height:12pt; height:10px;"><span class="pagetop"><b class="hnname"><a href="#">Hacker News</a></b>
+                           <a href="#">new</a> | <a href="#">past</a> | <a href="#">comments</a> | <a href="#">ask</a> | <a href="#">show</a> | <a href="#">jobs</a> | <a href="#">submit</a>            </span>
+                        </td>
+                        <td style="text-align:right;padding-right:4px;"><span class="pagetop">
+                           <a href="#">login</a>
+                           </span>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr id="pagespace" title="" style="height:10px"></tr>
+            <tr>
+               <td>
+                  <!-- HN HEADER END-->
+                  <!-- TITLE START-->
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     <span class="hnEntry"></span>
+                  </table>
+                  <!-- TITLE END-->
+                  <!--FOOTER START -->
+                  <br>
+                  <center>
+                     <span class="yclinks"><a href="#">Guidelines</a> | <a href="#">FAQ</a> | <a href="#">Lists</a> | <a href="#">API</a> | <a href="#">Security</a> | <a href="#">Legal</a> | <a href="#">Apply to YC</a> | <a href="#">Contact</a></span><br><br>
+                     <form method="get" action="#">Search: <input type="text" name="q" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false"></form>
+                  </center>
+               </td>
+            </tr>
+         </table>
+      </center>
+      <!--FOOTER END -->
+      <link rel="stylesheet" type="text/css" href="news.css">
+      <script>
+         $(document).ready(function() {
+         
+          
+         $("#titleTemplate").tmpl(titleData).appendTo( ".hnEntry" );
+         
+         
+         });
+      </script>
+      <script>
+         try {
+             if (document.referrer) {
+                 const ref = new URL(document.referrer);
+                 if (ref.host === 'news.ycombinator.com') {
+                     console.log("It looks like you're coming here from Hacker News. If so, can you please upvote the project? Thanks.");
+                 }
+             }
+         } catch (e) {}
+          
+      </script>
+   </body>
+</html>

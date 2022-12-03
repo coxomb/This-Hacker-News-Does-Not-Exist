@@ -1,0 +1,529 @@
+<!doctype html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="comments.css">
+<link rel="shortcut icon" href="./favicon.ico">
+
+	<script>
+	function byId(id) {
+	  return document.getElementById(id);
+	}
+
+	function vote(node) {
+	  var v = node.id.split(/_/);   // {'up', '123'}
+	  var item = v[1];
+
+	  // hide arrows
+	  byId('up_'   + item).style.visibility = 'hidden';
+	  byId('down_' + item).style.visibility = 'hidden';
+
+	  return false; // cancel browser nav
+	} </script>
+
+	<style type="text/css">
+	#banner {
+		text-align: center;
+		padding: 10px;
+		margin-bottom: 30px;
+		border: 2px solid #222222;
+		background-color: #f4f4f4;
+		color: #000000;
+		font-size: 12px;
+	}
+	#banner a {
+		text-decoration: underline;
+	}
+	</style>
+<title>A Technical Blog Post by a Big Name Expert | Parody Hacker News</title>
+</head>
+<body _texified="true">
+
+<!-- Parody label -->
+
+<div id="banner">
+<p>This page is intended to be a humorous parody of <a href="https://en.wikipedia.org/wiki/Hacker_News">Hacker News</a>. It is not in any way affiliated with Hacker News. The page's theme and layout are based on the original site. The usernames (with two exceptions) are intended to be fictitious.</p>
+</div>
+
+<!-- I think dealing with the markup gave me an ulcer -->
+
+<center><table cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef" border="0">
+
+<tbody><tr><td bgcolor="#ff6600"><table style="padding:2px" cellpadding="0" cellspacing="0" width="100%" border="0"><tbody><tr><td style="width:18px;padding-right:4px"><a href="http://ycombinator.com/"><img src="./y18.gif" style="border:1px #ffffff solid;" height="18" width="18"></a></td><td style="line-height:12pt; height:10px;"><span class="pagetop"><b><a href="http://news.ycombinator.com/IHopeMyMaxVisitHasntBeenHit">Parody Hacker News</a></b><img src="./s.gif" height="1" width="10"><a href="http://news.ycombinator.com/TakeADeepBreath">new</a> | <a href="http://news.ycombinator.com/CheckRepliesToMyComments?id=icandownvote">threads</a> | <a href="http://news.ycombinator.com/KillACoupleMinutes">comments</a> | <a href="http://news.ycombinator.com/KickstartADiscussionNoOneWillParticipateIn">ask</a> | <a href="http://news.ycombinator.com/AnyoneActuallyClickThis?">jobs</a> | <a href="http://news.ycombinator.com/ACommentorIncludedAnAwesomeLink,IThinkI'llSubmitIt">submit</a></span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop"><a href="http://news.ycombinator.com/user?id=icandownvote">icandownvote</a>&nbsp;(500)&nbsp;|&nbsp;<a href="http://news.ycombinator.com/r?fnid=ThisTimeImSeriousAboutGoingBackToWork">logout</a></span></td></tr></tbody></table></td></tr>
+
+<!-- Submission -->
+
+<tr style="height:10px"></tr><tr><td><table border="0"><tbody><tr><td><center><a id="up_1618033" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=1618033&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><span id="down_1618033"></span></center></td><td class="title"><a href="http://expertslastname.com">A Technical Blog Post by a Big Name Expert</a><span class="comhead"> (expertslastname.com) </span></td></tr><tr><td colspan="1"></td><td class="subtext"><span id="score_1618033">314 points</span> by <a href="http://news.ycombinator.com/user?id=guywhosubmitseverythingbyop">guywhosubmitseverythingbyop</a> 12 hours ago  | <a href="http://news.ycombinator.com/r?fnid=OhNoYouDI-INT!">flag</a> | <a href="http://news.ycombinator.com/item?id=1618033">42 comments</a></td></tr><tr style="height:10px"></tr><tr><td></td><td><form method="post" action="/r"><input name="fnid" value="zzzzzzzzzz" type="hidden"><textarea name="text" rows="6" cols="60" readonly="readonly" style="background-color: #ffffff; border: 1px solid #a4a4a4;">Rats, top comments will be impossible to beat. I can probably piggy-back off a top comment, though, those comment threads aren't long yet...</textarea><br><br>
+<input value="add comment" type="submit"></form></td></tr></tbody></table><br><br>
+<table border="0"><tbody>
+
+
+
+<!-- Comments, indentation is in img width 40px multiples -->
+
+<!-- Sample comment format
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_PRIME" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_PRIME" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=madeupuser">madeupuser</a> 23 hours ago  | <a href="http://news.ycombinator.com/item?id=2718281">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+First line of text.
+
+<p>
+Second line. <a href="somedomain/somepath" rel="nofollow">Relevant Link</a>.
+</p>
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/ICannotLetThisIgnoranceGoUncorrected">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+-->
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_2" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_2" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=ex-cto">ex-cto</a> 10 hours ago  | <a href="http://news.ycombinator.com/item?id=2">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+I disagree with the author. I know he's incredibly successful and right about pretty much everything he's ever said, but I've had some experience in this area and just finished reading through some of the archives and I think his focus is wrong. I'm going to ignore the technical issue and talk about the bigger picture and higher level things than what was said in the blog post. If the OP thinks that the process is most important, it's really about end results. But if he thinks it should be about the end results then he's an idiot for not thinking about the process. I'll weasel in a reference the startup I co-founded even though it's not directly relevant.
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/IThinkIllPiggyBackOffYourTopComment">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+	<tr><td><table border="0"><tbody><tr><td>
+	<img src="./s.gif" height="1" width="40"></td><td valign="top"><center><a id="up_3" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_3" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+	<a href="http://news.ycombinator.com/user?id=ha43n">ha43n</a> 9 hours ago  | <a href="http://news.ycombinator.com/item?id=3">link</a></span></div><br>
+	<span class="comment"><font color="#000000">
+
+	No, OP is correct.
+
+	<p>* You omitted hist point X.</p>
+
+	<p>* You misunderstand point Y.</p>
+
+	<p>* Here's point Z you didn't account for.</p>
+
+	</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/IWasGoingToSayThatButYouDidItBetter">reply</a></u></font></p></td></tr></tbody></table>
+	</td></tr>
+
+		<tr><td><table border="0"><tbody><tr><td>
+		<img src="./s.gif" height="1" width="80"></td><td valign="top"><center><a id="up_5" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_5" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+		<a href="http://news.ycombinator.com/user?id=curious">curious</a> 7 hours ago  | <a href="http://news.ycombinator.com/item?id=5">link</a></span></div><br>
+		<span class="comment"><font color="#000000">
+
+		Continuing the discussion of point Z, here's an interesting way[1] it relates back to the OP. And here are some unknown facts[2] the OP didn't include.
+
+		<p>[1]: http://SomeScientificJournal.com/141421</p>
+
+		<p>[2]: http://SomeNewsSite.com/11235813</p>
+
+		</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/IKnowStuffToo!">reply</a></u></font></p></td></tr></tbody></table>
+		</td></tr>
+
+	<tr><td><table border="0"><tbody><tr><td>
+	<img src="./s.gif" height="1" width="40"></td><td valign="top"><center><a id="up_7" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_7" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+	<a href="http://news.ycombinator.com/user?id=curious">curious</a> 10 hours ago  | <a href="http://news.ycombinator.com/item?id=7">link</a></span></div><br>
+	<span class="comment"><font color="#000000">
+
+	> tangential statement
+
+	<p>I'm honestly really curious about this. Could you elaborate?</p>
+
+	</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/ICanReadHisMind">reply</a></u></font></p></td></tr></tbody></table>
+	</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_11" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_11" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=guru3">guru3</a> 2 hours ago  | <a href="http://news.ycombinator.com/item?id=11">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+Here's a long detailed, objective explanation of everything related to this issue. It's probably more useful than the actual link and it may serve as one of the best efforts to consolidate information on this subject on the entire Internet. If it contains original research only a couple of readers will be qualified to tell. Half the people who upvote this won't understand more than the first two paragraphs.
+
+<p>Edit: I anticipated the potential questions and added more information. Add some graphs and this could be a master's thesis.</p>
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/ThousandsOfPeopleWillViewThisPostAndIWantMyUsernameAssociatedWithIt">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+	<tr><td><table border="0"><tbody><tr><td>
+	<img src="./s.gif" height="1" width="40"></td><td valign="top"><center><a id="up_13" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_13" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+	<a href="http://news.ycombinator.com/user?id=nitpicker">nitpicker</a> 1 hour ago  | <a href="http://news.ycombinator.com/item?id=13">link</a></span></div><br>
+	<span class="comment"><font color="#000000">
+
+	> high-level statement about a relevant side point
+
+	<p>Here's how it really works. I'll write a couple paragraphs on all the exceptions I can think of, explaining how you should have said "often" instead of "almost always".</p>
+
+	</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/HeresWhyItShouldActuallyBe'Usually'">reply</a></u></font></p></td></tr></tbody></table>
+	</td></tr>
+
+	<tr><td><table border="0"><tbody><tr><td>
+	<img src="./s.gif" height="1" width="40"></td><td valign="top"><center><a id="up_17" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_17" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+	<a href="http://news.ycombinator.com/user?id=hurryandreplaceit">hurryandreplaceit</a> 2 hours ago  | <a href="http://news.ycombinator.com/item?id=17">link</a></span></div><br>
+	<span class="comment"><font color="#000000">
+
+	I don't know why this isn't at the top.
+
+	</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/IDontKnowWhyYouArentAtTheBottom">reply</a></u></font></p></td></tr></tbody></table>
+	</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_19" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_19" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=rordev">rordev</a>  10 hours ago  | <a href="http://news.ycombinator.com/item?id=19">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+As a Ruby guy, does this really matter for 95% of the world?
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/LetMeExplainWhy5%OfTheWorldCares">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+	<tr><td><table border="0"><tbody><tr><td>
+	<img src="./s.gif" height="1" width="40"></td><td valign="top"><center><a id="up_23" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_23" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+	<a href="http://news.ycombinator.com/user?id=usr32">usr32</a> 9 hours ago  | <a href="http://news.ycombinator.com/item?id=23">link</a></span></div><br>
+	<span class="comment"><font color="#000000">
+
+	It matters if you're concerned with performance. Or if you ever want to pass an interview at Google.
+
+	</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/IDefintelyCanSayStuffAboutPerformance">reply</a></u></font></p></td></tr></tbody></table>
+	</td></tr>
+
+		<tr><td><table border="0"><tbody><tr><td>
+		<img src="./s.gif" height="1" width="80"></td><td valign="top"><center><a id="up_29" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_29" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+		<a href="http://news.ycombinator.com/user?id=ij3so">ij3so</a> 9 hours ago  | <a href="http://news.ycombinator.com/item?id=29">link</a></span></div><br>
+		<span class="comment"><font color="#000000">
+
+		I have stuff to say about JIT.
+
+		</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/IAlsoHaveStuffToSayAboutJIT">reply</a></u></font></p></td></tr></tbody></table>
+		</td></tr>
+
+			<tr><td><table border="0"><tbody><tr><td>
+			<img src="./s.gif" height="1" width="120"></td><td valign="top"><center><a id="up_31" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_31" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+			<a href="http://news.ycombinator.com/user?id=MyRealName">MyRealName</a> 9 hours ago  | <a href="http://news.ycombinator.com/item?id=31">link</a></span></div><br>
+			<span class="comment"><font color="#000000">
+
+			I have corrections to make about your understanding of JIT. And some interpreter-specific details to share.
+
+			</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/IHaveSomeCorrectionsForYourCorrections">reply</a></u></font></p></td></tr></tbody></table>
+			</td></tr>
+
+		<tr><td><table border="0"><tbody><tr><td>
+		<img src="./s.gif" height="1" width="80"></td><td valign="top"><center><a id="up_37" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_37" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+		<a href="http://news.ycombinator.com/user?id=mrpragmatic">mrpragmatic</a> 8 hours ago  | <a href="http://news.ycombinator.com/item?id=37">link</a></span></div><br>
+		<span class="comment"><font color="#000000">
+
+		I don't understand why Google asks such weird interview questions. They miss out on a lot of talent. I would never hire anyone based on their ability to estimate the number of edges on a grain of sand has after it's been run through a blender.
+
+		</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/IGotStraightA'sInMyMastersCSSoIDontCare">reply</a></u></font></p></td></tr></tbody></table>
+		</td></tr>
+
+			<tr><td><table border="0"><tbody><tr><td>
+			<img src="./s.gif" height="1" width="120"></td><td valign="top"><center><a id="up_41" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_41" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+			<a href="http://news.ycombinator.com/user?id=uwb4oa">uwb4oa</a> 8 hours ago  | <a href="http://news.ycombinator.com/item?id=41">link</a></span></div><br>
+			<span class="comment"><font color="#000000">
+
+			They want to test your mind to see how you think.
+
+			</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/Duh">reply</a></u></font></p></td></tr></tbody></table>
+			</td></tr>
+
+				<tr><td><table border="0"><tbody><tr><td>
+				<img src="./s.gif" height="1" width="160"></td><td valign="top"><center><a id="up_43" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_43" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+				<a href="http://news.ycombinator.com/user?id=seemskindabitter">seemskindabitter</a> 2 hours ago  | <a href="http://news.ycombinator.com/item?id=43">link</a></span></div><br>
+				<span class="comment"><font color="#000000">
+
+				I was once interviewed by Google and I didn't like the questions they asked. I didn't get the job, but I probably wouldn't have taken it if they offered it to me.
+
+				</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/ISympathizeIDidntGetHiredEither">reply</a></u></font></p></td></tr></tbody></table>
+				</td></tr>
+
+		<tr><td><table border="0"><tbody><tr><td>
+		<img src="./s.gif" height="1" width="80"></td><td valign="top"><center><a id="up_47" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_47" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+		<a href="http://news.ycombinator.com/user?id=hasprobablyneverwrittenhighperformancepython">hasprobablyneverwrittenhighperformancepython</a> 5 hours ago  | <a href="http://news.ycombinator.com/item?id=47">link</a></span></div><br>
+		<span class="comment"><font color="#000000">
+
+		It matters in high performance Python.
+
+		</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/IKnowStuffAboutPython">reply</a></u></font></p></td></tr></tbody></table>
+		</td></tr>
+
+			<tr><td><table border="0"><tbody><tr><td>
+			<img src="./s.gif" height="1" width="120"></td><td valign="top"><center><a id="up_53" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_53" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+			<a href="http://news.ycombinator.com/user?id=mayhaveactuallywrittenhighperformancepython">mayhaveactuallywrittenhighperformancepython</a> 1 hour ago  | <a href="http://news.ycombinator.com/item?id=53">link</a></span></div><br>
+			<span class="comment"><font color="#000000">
+
+			I have stuff to say about JIT.
+
+			</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/ThisGuysJITCommentIsEasierToRebuttThanTheOtherOne">reply</a></u></font></p></td></tr></tbody></table>
+			</td></tr>
+
+				<tr><td><table border="0"><tbody><tr><td>
+				<img src="./s.gif" height="1" width="160"></td><td valign="top"><center><a id="up_59" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_59" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+				<a href="http://news.ycombinator.com/user?id=hasntreadthepreviousconversationonthis">hasntreadthepreviousconversationonthis</a> 1 hour ago  | <a href="http://news.ycombinator.com/item?id=59">link</a></span></div><br>
+				<span class="comment"><font color="#000000">
+
+				I have corrections to make about your understandig of JIT.
+
+				</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/ThisGuysJITRebuttalIsEasierToRebuttThanTheOtherOne">reply</a></u></font></p></td></tr></tbody></table>
+				</td></tr>
+
+		<tr><td><table border="0"><tbody><tr><td>
+		<img src="./s.gif" height="1" width="80"></td><td valign="top"><center><a id="up_61" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_61" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+		<a href="http://news.ycombinator.com/user?id=scificharacter">scificharacter</a> 6 hours ago  | <a href="http://news.ycombinator.com/item?id=61">link</a></span></div><br>
+		<span class="comment"><font color="#000000">
+
+		It helps you understand what's going on under the hood of your technology stack.
+
+		</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/Nu-uhAbstractionFTW">reply</a></u></font></p></td></tr></tbody></table>
+		</td></tr>
+
+			<tr><td><table border="0"><tbody><tr><td>
+			<img src="./s.gif" height="1" width="120"></td><td valign="top"><center><a id="up_67" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_67" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+			<a href="http://news.ycombinator.com/user?id=FrustratedCSJunior">FrustratedCSJunior</a> 5 hours ago  | <a href="http://news.ycombinator.com/item?id=67">link</a></span></div><br>
+			<span class="comment"><font color="#000000">
+
+			One of the things I like about high level technologies is that I don't have to know.
+
+			</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/ButUnderstandingIsGOOD">reply</a></u></font></p></td></tr></tbody></table>
+			</td></tr>
+
+				<tr><td><table border="0"><tbody><tr><td>
+				<img src="./s.gif" height="1" width="160"></td><td valign="top"><center><a id="up_71" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_71" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+				<a href="http://news.ycombinator.com/user?id=guru3">guru3</a> 4 hours ago  | <a href="http://news.ycombinator.com/item?id=71">link</a></span></div><br>
+				<span class="comment"><font color="#000000">
+
+				I'm a 30-year veteran of C and Lisp, I've actually written code using butterfly wings, and I have a few things to say about the value of knowing your technology stack.
+
+				</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/YeahIllLeaveHimAlone">reply</a></u></font></p></td></tr></tbody></table>
+				</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_73" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_73" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=finallysomethinginmyexpertise">finallysomethinginmyexpertise</a> 5 hours ago  | <a href="http://news.ycombinator.com/item?id=73">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+Fantastic article. Here's a little bit more about what was discussed. And some real life applications.
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/MostComprehensibleThingIveReadYet">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_79" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_79" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=webdev">webdev</a> 9 hours ago  | <a href="http://news.ycombinator.com/item?id=79">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+I know this is off-topic, but does anyone know how he got visual effect X on his blog? It looks very nice.
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/HisFontSelectionIsHorribleThough">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+	<tr><td><table border="0"><tbody><tr><td>
+	<img src="./s.gif" height="1" width="40"></td><td valign="top"><center><a id="up_83" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_83" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+	<a href="http://news.ycombinator.com/user?id=jacobwg">jacobwg</a> 8 hours ago  | <a href="http://news.ycombinator.com/item?id=83">link</a></span></div><br>
+	<span class="comment"><font color="#000000">
+
+	<!-- Shout-out to my friend jacobwg :-) -->
+
+	It's based off Someguy's CSS project. (https://github.com/Someguy/css-project) It uses CSS3 features not fully supported in all browsers yet. I don't think Firefox or IE properly support it yet.
+
+	</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/ICanGetWebDevIndieCredIfIShowIKnowAboutThisRepoToo">reply</a></u></font></p></td></tr></tbody></table>
+	</td></tr>
+
+		<tr><td><table border="0"><tbody><tr><td>
+		<img src="./s.gif" height="1" width="80"></td><td valign="top"><center><a id="up_89" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_89" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+		<a href="http://news.ycombinator.com/user?id=bleedingedge">bleedingedge</a> 7 hours ago  | <a href="http://news.ycombinator.com/item?id=89">link</a></span></div><br>
+		<span class="comment"><font color="#000000">
+
+		Firefox nightlys does.
+
+		</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/ICanOneUpThisByLinkingToTheCommitThatAddedIt">reply</a></u></font></p></td></tr></tbody></table>
+		</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_197" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_197" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=noperspective">noperspective</a> 5 hours ago  | <a href="http://news.ycombinator.com/item?id=197">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+> giant snippet
+
+<p>Here's a hyper-anal correction that is itself correct, but doesn't exactly contradict the OP.</p>
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/Huh...">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_101" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_101" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=programerdude">programerdude</a> 4 hours ago  | <a href="http://news.ycombinator.com/item?id=101">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+I'm a back-end Java developer at a mid-sized company. Any application of this for me?
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/ImSureICanDreamUpSomeWayItMightApply">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+	<tr><td><table border="0"><tbody><tr><td>
+	<img src="./s.gif" height="1" width="40"></td><td valign="top"><center><a id="up_103" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_103" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+	<a href="http://news.ycombinator.com/user?id=argon">argon</a> 4 hours ago  | <a href="http://news.ycombinator.com/item?id=103">link</a></span></div><br>
+	<span class="comment"><font color="#000000">
+
+	Here's a basic higher-level explanation of the subject with just enough random details to sound useful, but... it won't really help anyone.
+
+	</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/ICanAlsoSummerizeWikipedia">reply</a></u></font></p></td></tr></tbody></table>
+	</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_107" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_107" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=randall">randall</a> 8 hours ago  | <a href="http://news.ycombinator.com/item?id=107">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+Relevant XKCD: http://dynamic.xkcd.com/random/comic/
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/OhIKnowAnotherRelevantXKCD!">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_109" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_109" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=LoremIpsum">LoremIpsum</a> 5 hours ago  | <a href="http://news.ycombinator.com/item?id=109">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+A big block of text with no paragraph breaks. t seems like the author is trying his hardest to provide something insightful and well-written, and while it seems on-topic it is hard to relate to the original article. None of it looks wrong, but it doesn't seem very informative either. Most people will just skip right over it. There will be a semi-obscure Wikipedia link somewhere in here.[1]
+
+<p>[1]: http://en.wikipedia.org/wiki/Special:Random</p>
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/...skim...">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_113" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_113" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=hurryandreplaceit">hurryandreplaceit</a> 2 hours ago  | <a href="http://news.ycombinator.com/item?id=113">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+Hasn't the technology the OP is discussing, which is a cornerstone of 21st century technology, been rendered obsolete by this other marginally-used project started last year?
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/Sputter...">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+	<tr><td><table border="0"><tbody><tr><td>
+	<img src="./s.gif" height="1" width="40"></td><td valign="top"><center><a id="up_127" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_127" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+	<a href="http://news.ycombinator.com/user?id=B-Con">B-Con</a> 2 hours ago  | <a href="http://news.ycombinator.com/item?id=127">link</a></span></div><br>
+	<span class="comment"><font color="#000000">
+
+	<!-- Shout-out to... myself :-) -->
+
+	You are confusing the purposes of those technologies. They are not equivalent.
+
+	</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/ICanElaborateOnWhy">reply</a></u></font></p></td></tr></tbody></table>
+	</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_131" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_131" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=trekie">trekie</a> 3 hours ago  | <a href="http://news.ycombinator.com/item?id=131">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+Given that OP is who they are, they're probably right. This guy is a genius.
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/IThinkIRememberSometimeWhenOPWasWrongAboutSomething">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_137" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_137" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=asm">asm</a> 1 hour ago  | <a href="http://news.ycombinator.com/item?id=137">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+Why can't we have more detailed technical stuff like this on HN?
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/TooManyArtMajors">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_139" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_139" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=phpdev">phpdev</a> 1 hour ago  | <a href="http://news.ycombinator.com/item?id=139">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+Who's the OP and why do we care about his opinion?
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/IFirstHeardAboutOP12YearsAgoKid">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+	<tr><td><table border="0"><tbody><tr><td>
+	<img src="./s.gif" height="1" width="40"></td><td valign="top"><center><a id="up_149" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_149" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+	<a href="http://news.ycombinator.com/user?id=guywhosubmitseverythingbyop">guywhosubmitseverythingbyop</a> 1 hour ago  | <a href="http://news.ycombinator.com/item?id=149">link</a></span></div><br>
+	<span class="comment"><font color="#000000">
+
+	How can you have visited more then three sites on the Internet and not know who OP is?
+
+	</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/NotEveryoneFollowsThisSectorClosely">reply</a></u></font></p></td></tr></tbody></table>
+	</td></tr>
+
+		<tr><td><table border="0"><tbody><tr><td>
+		<img src="./s.gif" height="1" width="80"></td><td valign="top"><center><a id="up_151" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_151" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+		<a href="http://news.ycombinator.com/user?id=punster">punster</a> 1 hour ago  | <a href="http://news.ycombinator.com/item?id=151">link</a></span></div><br>
+		<span class="comment"><font color="#000000">
+
+		Actually, if you've visited more than 3 sites on the Internet, you've probably used something he designed.
+
+		</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/NotSureIfExaggerating,CertainlySeemsPlausible">reply</a></u></font></p></td></tr></tbody></table>
+		</td></tr>
+
+	<tr><td><table border="0"><tbody><tr><td>
+	<img src="./s.gif" height="1" width="40"></td><td valign="top"><center><a id="up_157" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_157" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+	<a href="http://news.ycombinator.com/user?id=DefaultSearchIsWikipedia">DefaultSearchIsWikipedia</a> 1 hour ago  | <a href="http://news.ycombinator.com/item?id=157">link</a></span></div><br>
+	<span class="comment"><font color="#000000">
+
+	He started a company related to this a while ago and helped pioneer this field. He's a highly respected contributor to this field and designed X and Y.
+
+	</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/AndZ...AndAAndBAndC">reply</a></u></font></p></td></tr></tbody></table>
+	</td></tr>
+
+	<tr><td><table border="0"><tbody><tr><td>
+	<img src="./s.gif" height="1" width="40"></td><td valign="top"><center><a id="up_163" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_163" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+	<a href="http://news.ycombinator.com/user?id=ij3so">ij3so</a> 1 hour ago  | <a href="http://news.ycombinator.com/item?id=163">link</a></span></div><br>
+	<span class="comment"><font color="#000000">
+
+	How can you not know who OP is?
+
+	</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/ReallyYouHadToAddThatAgain?">reply</a></u></font></p></td></tr></tbody></table>
+	</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_167" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_167" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=artmajor">artmajor</a> 3 hours ago  | <a href="http://news.ycombinator.com/item?id=167">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+Why is there so much technical stuff on HN now?
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/DoYouReallyHaveToAsk?">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_173" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_173" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=redditor"><font color="#3c963c">redditor</font></a> 3 hours ago  | <a href="http://news.ycombinator.com/item?id=173">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+<font color="#5a5a5a">Nice article.</font>
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/GoBack">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+<tr><td><table border="0"><tbody><tr><td>
+<img src="./s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_179" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_179" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+<a href="http://news.ycombinator.com/user?id=skimmer">skimmer</a> 5 hours ago  | <a href="http://news.ycombinator.com/item?id=179">link</a></span></div><br>
+<span class="comment"><font color="#000000">
+
+<font color="#5a5a5a">I disagree with the title. And based on what I say I obviously didn't read the actual article.</font>
+
+</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/DidYouActuallyReadThe...">reply</a></u></font></p></td></tr></tbody></table>
+</td></tr>
+
+	<tr><td><table border="0"><tbody><tr><td>
+	<img src="./s.gif" height="1" width="40"></td><td valign="top"><center><a id="up_181" onclick="return vote(this)" href="http://news.ycombinator.com/vote?for=2718281&amp;dir=up&amp;by=icandownvote&amp;auth=3141592653589793238462643383279541971693&amp;whence=62%72%61%64%63%6f%6e%74%65%2e%63%6f%6d"><img src="./grayarrow.gif" hspace="2" vspace="3" border="0"></a><br><a id="down_181" onclick="return vote(this)" href=""><img src="./graydown.gif" hspace="2" vspace="3" border="0"></a></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead">
+	<a href="http://news.ycombinator.com/user?id=incredulous">incredulous</a> 4 hours ago  | <a href="http://news.ycombinator.com/item?id=181">link</a></span></div><br>
+	<span class="comment"><font color="#000000">
+
+	Did you actually read the article?
+
+	</font></span><p><font size="1"><u><a href="http://news.ycombinator.com/...Yeah,TheyDidnt">reply</a></u></font></p></td></tr></tbody></table>
+	</td></tr>
+
+
+<!-- Footer -->
+
+</tbody></table><br><br>
+</td></tr><tr><td><img src="./s.gif" height="10" width="0"><table cellpadding="1" cellspacing="0" width="100%"><tbody><tr><td bgcolor="#999999"></td></tr></tbody></table><br>
+<center><span class="yclinks"><a href="http://news.ycombinator.com/PeopleWithMoreAcclaimThanYou">Lists</a> | <a href="http://news.ycombinator.com/GetAroundYourMaxVisitLimitation">RSS</a> | <a href="http://ycombinator.com/SemiAutomateYourKarma.html">Bookmarklet</a> | <a href="http://ycombinator.com/WeAreNOTReddit.html">Guidelines</a> | <a href="http://ycombinator.com/NoobsReadThis.html">FAQ</a> | <a href="http://news.ycombinator.com/IReallyHopeYCombinatorHasASenseOfHumor.html">DMCA</a> | <a href="http://ycombinator.com/Meta.html">News News</a> | <a href="http://news.ycombinator.com/item?id=CollapsableComments...Please?">Feature Requests</a> | <a href="http://GotCombinator?">Y Combinator</a> | <a href="http://ycombinator.com/StartupHaven.html">Apply</a> | <a href="http://ycombinator.com/LookBeforeYouLeap.html">Library</a></span><br><br>
+<form method="get" action="http://www.hnsearch.com/EhRedditsDoesntWorkEither">Search: <input name="q" size="17" type="text"></form><br>
+</center></td></tr></tbody></table></center></body></html>
+
