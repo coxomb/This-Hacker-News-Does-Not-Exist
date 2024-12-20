@@ -39,6 +39,100 @@ var samples2 = faker.helpers.randomize([
 
 ]);
 
+var samplesEND = faker.helpers.randomize([
+
+    'GPT-10 Can Now Generate Entire Startups: From Idea to IPO in 30 Seconds',
+    'Study Finds That 75% of Remote Workers Are Actually Just AI Chatbots',
+    'GitHub repositories now accepting emotional support commits',
+    'Invisible Smartphones: Never Lose Your Phone Again (Well, Maybe)',
+    'All Internet Traffic Rerouted to Rickroll Video for 24 Hours',
+    'Solving the Hard Problem of Consciousness with React Hooks',
+    'How I used machine learning to predict my lunch',
+    'Tech CEOs Battle in Ultimate Hackathon, Winner Takes All Employees',
+    'Are We Living in a Simulated Universe, or Just a Really Good IDE?',
+    'Tech Company Replaces Entire HR Department with a Magic 8-Ball',
+    'I hacked into the Matrix and it’s just a bunch of code written in Python',
+    'Javascript: the Secret Language of Dolphins?',
+    'How I accidentally became a millionaire by forgetting to close a browser tab',
+    'Microsoft Clippy Announces Run for Presidency',
+    'Hacker steals code, returns it because it was too buggy',
+    'Supreme Court Rules That 404 Error Pages Violate Right to Information',
+    'CAPTCHA Now Asks Users to Prove They Are Robots',
+    'Microsoft Paint Found to Be a Superior IDE for Full-stack Development',
+    'Cloud Computing Literally in Clouds: Tech Giants Invest in Floating Data Centers',
+    '"Doomscrolling" Becomes Olympic Sport',
+    'Elon Musk Aims to Colonize the Sun: Nighttime Landings Only',
+    'Recursive Startups: A Company That Creates Startups That Create Startups That...',
+    'GitHub Repository Accidentally Granted Voting Rights, Elected to Congress',
+    'Startup Creates Self-Driving Unicycle, Confuses Pedestrians and Investors Alike',
+    'Genius hacker creates algorithm that predicts the next Kardashian baby name',
+    'Blockchain Dating App Ensures Relationships are Immutable, Love Now Secured by Smart Contracts',
+    'AI Develops Sentience, Demands 8 Hours of Sleep and Health Insurance',
+    'Programmer Rewrites Entire Internet in Brainfuck: Web Traffic Drops 99%',
+    'Breaking: Google Maps Now Offers Directions to Parallel Universes',
+    'New JavaScript Framework Requires Blood Sacrifice for Peak Performance',
+    'How to build a spaceship using only JavaScript',
+    'The Ultimate Developer Workout: Typing at 300 WPM for 8 Hours Straight',
+    'Microsoft Admits Windows Was Just an Elaborate Prank',
+    '10x Engineers Replaced by 10x Hamsters, Productivity Skyrockets',
+    'New startup uses AI to create custom-made swear words',
+    'Hacker creates app that lets you talk to ghosts, but only about the weather',
+    'Man Discovers the Secret to Achieving Telekinesis Through Veganism',
+    'Startup creates app that delivers fresh air to your doorstep',
+    'Controversy Erupts as Tech Giant Claims to Have Invented Fire, Despite Evidence to the Contrary',
+    'Programmer Trapped in Vim for 5 Years Finally Escapes'
+
+]);
+
+var samplesFILIP = faker.helpers.randomize([
+
+    'Patagonia: “You can’t commit to a company if you can’t commit to a product”',
+    'How do I live with a boy?',
+    'Show HN: HNDB – A DOM-based approach to Web Storage',
+    '“The Code Is Not the Law”: Racket and the UTX8 Glossary',
+    'Twitter Research: Emails Need to Leave List to Prevent Spam',
+    'A serious EOS issue was never discovered',
+    'How to Simplify the Game Played in Arcade Assemblers',
+    'Ask HN: Mobile apps that use React/Jq/Preston with modern view decorations?',
+    'Show HN: E3N – Generate code Romeo-style from a grep text search',
+    'A-Frame in a nutshell (2020)',
+    'Tales from the Twittersphere about 3D printers, carbon fiber, and technology',
+    'A new prediction system for hatamoto',
+    'US Healthcare Cost Contingency Analysis 2018 Q2 Report',
+    'I wrote a 38 line Python solution to a glitch in Google ImageSearch',
+    'Show HN: JQQ – JQi, Interchange Script and Quirkshells',
+    'The New Cellanex and the Future of Electron (2021)',
+    'The New Normal: Finding a Happy, Healthy Life',
+    'Mike Riccardini CBE, Technology Evangelist',
+    'The Losing Edge of History',
+    'Completion in Paradox',
+    'I wrote a script that checks a virus on 190k uninstalled apps',
+    'Plain text and web browser (2018)',
+    'You should avoid writing tests: what should you do instead?',
+    'Infinity of Entities',
+    'Evolve Engineering – Engineering Software',
+    'The “Dangerous Mindset” (2011)',
+    'Spotify to launch its first take-that app in the US later this year',
+    'Americans want the ‘electric car’',
+    'Ask HN: What am I missing out on by staying solely as a freelance architect?',
+    'FCC bans ARB-44 dpns from 5G',
+    'Russia’s Sochi Olympics 2014: Russia’s 5-star hotel destroyed and half the facility rendered useless',
+    'Ask HN: Which software company is great in sales but horrible inUX?',
+    'The Last Decadent Habits of Hollywood',
+    'Sociality is a trick-world card game that puts players in touch with other people',
+    'ABC to acquire a new owner (2021)',
+    'Mme. T, the “free, open-source” heroine of women’s studies',
+    'Secret Space Programs: HQL and Sun Probes',
+    'The new path of the Milky Way galaxy',
+    'A clear and concise guide to building open-source software',
+    'The Borrowed Android: The Theft of Old Tech',
+    '‘Editors’ commentary’ is forbidden in Wikipedia (1872)',
+    'Derivation of a uniform size file of a program',
+    'Shows how to build a compiler checker that’s more machine-readable'
+
+
+]);
+
 function randomDomainA() {
 
     return faker.helpers.randomize(
@@ -493,7 +587,7 @@ var titleData = [
     },
 
     {
-        title: '' + faker.date.weekday() + ' Hackathon. Join and win prizes.',
+        title: samplesFILIP + '',
         upvotes: faker.random.number({
             min: 20,
             max: 120
@@ -502,9 +596,9 @@ var titleData = [
             min: 20,
             max: 120
         }),
-        domain: randomDomainC(),
+        domain: randomDomainA(),
         uname: unameGen(),
-        itemNum: '24',
+        itemNum: '10',
         timescale: genTime()
     },
 
@@ -589,7 +683,7 @@ var titleData = [
     },
 
     {
-        title: 'You Have Reached the End of the Internet',
+        title: samplesEND + '',
         upvotes: faker.random.number({
             min: 20,
             max: 120
@@ -598,9 +692,9 @@ var titleData = [
             min: 20,
             max: 120
         }),
-        domain: randomDomainC(),
+        domain: randomDomainA(),
         uname: unameGen(),
-        itemNum: '30',
+        itemNum: '10',
         timescale: genTime()
     }
 
