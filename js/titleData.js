@@ -598,7 +598,7 @@ var titleData = [
         }),
         domain: randomDomainA(),
         uname: unameGen(),
-        itemNum: '10',
+        itemNum: '24',
         timescale: genTime()
     },
 
@@ -694,7 +694,7 @@ var titleData = [
         }),
         domain: randomDomainA(),
         uname: unameGen(),
-        itemNum: '10',
+        itemNum: '30',
         timescale: genTime()
     }
 
